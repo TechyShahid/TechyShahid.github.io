@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shahid Khan — Senior Software Engineer with 9+ years of experience in Java, Spring Boot, Microservices, Cloud, and Full-Stack Development.">
+    <meta name="keywords" content="Shahid Khan, Software Engineer, Java, Spring Boot, Microservices, Portfolio">
+    <meta name="author" content="Shahid Khan">
+    <title>Shahid Khan | Senior Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Shahid Khan</span>
+                <span class="hero-role" id="typed-role"></span>
+            </h1>
+            <p class="hero-description animate-on-scroll">
+                Senior Software Engineer with <strong>9+ years</strong> of experience crafting high-performance microservices, 
+                cloud-native applications, and scalable distributed systems.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get in Touch</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span>View Projects</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number" data-target="9">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Companies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-plus">M+</span>
+                    <span class="stat-label">Daily Transactions</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-on-scroll">
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="code-dot code-dot--red"></span>
+                    <span class="code-dot code-dot--yellow"></span>
+                    <span class="code-dot code-dot--green"></span>
+                    <span class="code-filename">ShahidKhan.java</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">public class</span> <span class="code-class">ShahidKhan</span> {
+
+  <span class="code-keyword">private</span> String role = <span class="code-string">"Senior Software Engineer"</span>;
+  <span class="code-keyword">private</span> <span class="code-keyword">int</span> experience = <span class="code-number">9</span>;
+  <span class="code-keyword">private</span> String[] skills = {
+    <span class="code-string">"Java"</span>, <span class="code-string">"Spring Boot"</span>,
+    <span class="code-string">"Microservices"</span>, <span class="code-string">"Cloud"</span>
+  };
+
+  <span class="code-keyword">public</span> String <span class="code-method">getCurrentCompany</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Wells Fargo"</span>;
+  }
+
+  <span class="code-keyword">public</span> <span class="code-keyword">boolean</span> <span class="code-method">isPassionate</span>() {
+    <span class="code-keyword">return</span> <span class="code-keyword">true</span>;
+  }
+}</code></pre>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">01 — About Me</span>
+                <h2 class="section-title">Turning complex problems<br>into elegant solutions</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        I'm a <strong>Senior Software Engineer</strong> currently at <strong>Wells Fargo</strong>, where I architect and build 
+                        cloud-native microservices that process millions of financial transactions daily. With expertise spanning 
+                        <strong>Java, Spring Boot, Kubernetes, and cloud platforms</strong>, I specialize in creating highly scalable, 
+                        secure, and resilient distributed systems.
+                    </p>
+                    <p>
+                        Over 9+ years across organizations like <strong>Wells Fargo, Nagarro, and Monocept</strong>, I've led 
+                        cloud migrations, designed RESTful architectures, and implemented robust security solutions. I'm passionate 
+                        about clean code, design patterns, and building software that makes a real impact.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>High-throughput systems (1500 TPS)</span>
+                        </div>
+                        <div class="highlight">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Cloud-native architecture (AWS, Azure)</span>
+                        </div>
+                        <div class="highlight">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Enterprise-grade security (JWT, OAuth)</span>
+                        </div>
+                        <div class="highlight">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Full-stack (React, Angular, Spring)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-tech-stack animate-on-scroll">
+                    <h3 class="tech-stack-title">Tech Stack</h3>
+                    <div class="tech-orbit">
+                        <div class="tech-center">
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-ring tech-ring--1">
+                            <div class="tech-item" style="--i: 0; --total: 4;">Spring Boot</div>
+                            <div class="tech-item" style="--i: 1; --total: 4;">Docker</div>
+                            <div class="tech-item" style="--i: 2; --total: 4;">Kubernetes</div>
+                            <div class="tech-item" style="--i: 3; --total: 4;">Kafka</div>
+                        </div>
+                        <div class="tech-ring tech-ring--2">
+                            <div class="tech-item" style="--i: 0; --total: 6;">React</div>
+                            <div class="tech-item" style="--i: 1; --total: 6;">PostgreSQL</div>
+                            <div class="tech-item" style="--i: 2; --total: 6;">Redis</div>
+                            <div class="tech-item" style="--i: 3; --total: 6;">AWS</div>
+                            <div class="tech-item" style="--i: 4; --total: 6;">Azure</div>
+                            <div class="tech-item" style="--i: 5; --total: 6;">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">02 — Experience</span>
+                <h2 class="section-title">Where I've built<br>impactful software</h2>
+            </div>
+            <div class="timeline">
+                <!-- Wells Fargo -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-date">Sep 2023 – Present</span>
+                                <h3 class="timeline-company">Wells Fargo</h3>
+                                <span class="timeline-role">Senior Software Engineer</span>
+                                <span class="timeline-location">📍 Bangalore, India</span>
+                            </div>
+                            <div class="timeline-badge timeline-badge--current">Current</div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed cloud-based solutions to automate cheque processing using <strong>Java 17, Spring Boot, AKS Azure</strong></li>
+                            <li>Created REST APIs to process and track check processing with high-throughput requirements</li>
+                            <li>Integrated <strong>Kafka</strong> event-driven architecture for check processing and validation workflows</li>
+                            <li>Led migration of microservice projects from <strong>PCF to OpenShift</strong> cloud platform</li>
+                            <li>Built <strong>ReactJS</strong> single-page applications for check processing operations</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Java 17</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Azure AKS</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nagarro -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-date">Aug 2021 – Sep 2023</span>
+                                <h3 class="timeline-company">Nagarro</h3>
+                                <span class="timeline-role">Staff Engineer</span>
+                                <span class="timeline-location">📍 Gurugram, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed CRM-related microservices using <strong>Spring REST and Java 11</strong></li>
+                            <li>Implemented microservices security using <strong>Spring Security and JWT</strong></li>
+                            <li>Led requirement gathering and feasibility analysis for <strong>AWS cloud migration</strong> and Amazon EKS</li>
+                            <li>Implemented REST API request/response payload validation with <strong>JSON Schema interceptors</strong></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Java 11</span>
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">EKS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monocept -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-date">Aug 2017 – July 2021</span>
+                                <h3 class="timeline-company">Monocept</h3>
+                                <span class="timeline-role">Software Engineer</span>
+                                <span class="timeline-location">📍 Gurugram, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Implemented <strong>Spring AOP</strong> feature for application-wide logging</li>
+                            <li>Designed and implemented <strong>Spring Security JWT</strong> for microservice authentication</li>
+                            <li>Built <strong>Angular</strong> single-page applications consuming REST API payloads</li>
+                            <li>Integrated <strong>SOAP web services</strong> using Apache Axis 2 and WSDL</li>
+                            <li>Developed multiple REST APIs for insurance-based banking systems</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring AOP</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">SOAP</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">03 — Projects</span>
+                <h2 class="section-title">High-impact systems<br>I've engineered</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- CHIMG Application -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <div class="project-label">Wells Fargo — Current</div>
+                    <h3 class="project-title">CHIMG Application</h3>
+                    <p class="project-subtitle">Whole-Sale Extract Service</p>
+                    <p class="project-description">
+                        Building microservices for cheque modernization — inspecting cheque TIFF images and returning 
+                        quality check reports (IQA) with extreme throughput requirements.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">10M+</span>
+                            <span class="metric-label">Daily Volume</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">100ms</span>
+                            <span class="metric-label">SLA at P95</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">1500</span>
+                            <span class="metric-label">TPS at Peak</span>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Java 17</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Circuit Breaker</span>
+                        <span class="tag">ReactJS</span>
+                    </div>
+                </div>
+
+                <!-- PME Application -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="project-label">Wells Fargo — Current</div>
+                    <h3 class="project-title">PME Application</h3>
+                    <p class="project-subtitle">Payment Management Engine</p>
+                    <p class="project-description">
+                        A comprehensive monitoring application for image-based payment processing. Used by the PMC team 
+                        to track and manage cheque image item processing across the pipeline.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">24/7</span>
+                            <span class="metric-label">Monitoring</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Real-time</span>
+                            <span class="metric-label">Processing</span>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Java 17</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">ActiveMQ</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">PCF</span>
+                        <span class="tag">ReactJS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">04 — Skills</span>
+                <h2 class="section-title">Technologies & tools<br>in my arsenal</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Backend & Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Java (8, 11, 17)</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Spring Boot</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Spring Security</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Spring Cloud</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Hibernate / JPA</div>
+                        <div class="skill-item"><span class="skill-dot"></span>REST API Design</div>
+                        <div class="skill-item"><span class="skill-dot"></span>SOAP Web Services</div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-4h6v4"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>ReactJS</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Angular</div>
+                        <div class="skill-item"><span class="skill-dot"></span>HTML / CSS / JS</div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Databases & Caching</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>PostgreSQL</div>
+                        <div class="skill-item"><span class="skill-dot"></span>MySQL</div>
+                        <div class="skill-item"><span class="skill-dot"></span>MongoDB</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Oracle</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Redis Cache</div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Docker</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Kubernetes</div>
+                        <div class="skill-item"><span class="skill-dot"></span>AWS / Azure</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Jenkins CI/CD</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Terraform</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Harness / UCD</div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Messaging & Middleware</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Apache Kafka</div>
+                        <div class="skill-item"><span class="skill-dot"></span>RabbitMQ</div>
+                        <div class="skill-item"><span class="skill-dot"></span>ActiveMQ</div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Architecture & Concepts</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Microservices</div>
+                        <div class="skill-item"><span class="skill-dot"></span>System Design</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Design Patterns</div>
+                        <div class="skill-item"><span class="skill-dot"></span>SOLID Principles</div>
+                        <div class="skill-item"><span class="skill-dot"></span>DSA</div>
+                        <div class="skill-item"><span class="skill-dot"></span>OOP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">05 — Education</span>
+                <h2 class="section-title">Academic foundation</h2>
+            </div>
+            <div class="education-card animate-on-scroll">
+                <div class="education-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 0 3 3 6 3s6-3 6-3v-5"/></svg>
+                </div>
+                <div class="education-info">
+                    <h3 class="education-degree">B.Tech in Computer Science</h3>
+                    <p class="education-school">Centurion University</p>
+                    <p class="education-meta">
+                        <span>📍 Odisha, India</span>
+                        <span>📅 Aug 2011 – Nov 2015</span>
+                        <span>📊 CGPA: 7.6 / 10</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">06 — Contact</span>
+                <h2 class="section-title">Let's build something<br>amazing together</h2>
+                <p class="section-subtitle">Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid animate-on-scroll">
+                <a href="mailto:shahid.08.20222@gmail.com" class="contact-card" id="contact-email">
+                    <div class="contact-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                    </div>
+                    <span class="contact-card-label">Email</span>
+                    <span class="contact-card-value">shahid.08.20222@gmail.com</span>
+                </a>
+                <a href="tel:+918151001355" class="contact-card" id="contact-phone">
+                    <div class="contact-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <span class="contact-card-label">Phone</span>
+                    <span class="contact-card-value">+91 8151001355</span>
+                </a>
+                <a href="https://github.com/TechyShahid" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+                    <div class="contact-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </div>
+                    <span class="contact-card-label">GitHub</span>
+                    <span class="contact-card-value">TechyShahid</span>
+                </a>
+                <a href="https://linkedin.com/in/Shahid039" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+                    <div class="contact-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <span class="contact-card-label">LinkedIn</span>
+                    <span class="contact-card-value">Shahid039</span>
+                </a>
+                <a href="https://leetcode.com/Shahid" target="_blank" rel="noopener" class="contact-card" id="contact-leetcode">
+                    <div class="contact-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span class="contact-card-label">LeetCode</span>
+                    <span class="contact-card-value">Shahid</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>SK<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & built by Shahid Khan &copy; 2025</p>
+                <div class="footer-links">
+                    <a href="https://github.com/TechyShahid" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/Shahid039" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:shahid.08.20222@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
