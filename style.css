@@ -347,6 +347,18 @@ img {
     transform: translateY(-2px);
 }
 
+.btn-tertiary {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-tertiary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
 .hero-actions {
     display: flex;
     gap: 16px;
