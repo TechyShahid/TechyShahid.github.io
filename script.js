@@ -269,7 +269,13 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (!href || href.length < 2) return;
+
+        const targetId = href.slice(1);
+        if (!/^[A-Za-z][A-Za-z0-9_-]*$/.test(targetId)) return;
+
+        const target = document.getElementById(targetId);
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
